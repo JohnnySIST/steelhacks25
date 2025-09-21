@@ -1,0 +1,58 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff; /* Light theme background */
+  color: #333333; /* Dark text for contrast */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.8rem; /* Slightly larger font for emphasis */
+  font-weight: bold;
+  color: #0070f3; /* Blue accent color */
+  text-decoration: none;
+}
+
+.logo:hover {
+  text-decoration: underline;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navLinks a {
+  color: #333333; /* Dark text for links */
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500; /* Slightly bolder font */
+}
+
+.navLinks a:hover {
+  color: #0070f3; /* Blue accent on hover */
+  text-decoration: underline;
+}
+
+.navButton {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #e6f7ff; /* Light blue background */
+  color: #0070f3; /* Blue text */
+  border: 1px solid #0070f3; /* Blue border */
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600; /* Slightly bolder font */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navButton:hover {
+  background-color: #cceeff; /* Slightly darker blue on hover */
+  color: #005bb5; /* Darker blue text on hover */
+}
