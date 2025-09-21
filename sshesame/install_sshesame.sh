@@ -27,8 +27,8 @@ SSH_ARGS="-o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -p $PORT -
 
 # Copy the files on the remote server
 ssh $SSH_ARGS root@"$IP" "command -v rsync >/dev/null 2>&1 || (apt-get update && apt-get install -y rsync)"
-rsync -avz -e "ssh $SSH_ARGS" sshesame-linux-amd64 root@"$IP":/usr/local/bin/
-ssh $SSH_ARGS root@"$IP" "chmod +x /usr/local/bin/sshesame-linux-amd64"
+rsync -avz -e "ssh $SSH_ARGS" sshesame root@"$IP":/usr/local/bin/
+ssh $SSH_ARGS root@"$IP" "chmod +x /usr/local/bin/sshesame"
 rsync -avz -e "ssh $SSH_ARGS" sshesame.yaml root@"$IP":/etc/sshesame/
 rsync -avz -e "ssh $SSH_ARGS" ssh_host_rsa_key root@"$IP":/etc/sshesame/
 rsync -avz -e "ssh $SSH_ARGS" ssh_host_ecdsa_key root@"$IP":/etc/sshesame/
