@@ -8,6 +8,7 @@ module.exports = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  output: 'export',
 };
 
 export default nextConfig;
