@@ -1,0 +1,8 @@
+# Ignore SSH host keys
+ssh_host_rsa_key
+ssh_host_ecdsa_key
+ssh_host_ed25519_key
+*.pub
+
+# Ignore state files
+last_processed.txt

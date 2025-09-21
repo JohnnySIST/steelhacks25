@@ -1,0 +1,12 @@
+[Unit]
+Description=SSH honeypot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+# Path to the sshesame binary and config file
+ExecStart=/usr/local/bin/sshesame-linux-amd64 -config /etc/sshesame/sshesame.yaml
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
